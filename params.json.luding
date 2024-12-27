@@ -1,0 +1,97 @@
+{
+    "TMAX": 80.005,
+    
+    "DT": 5.0e-3,
+    "DH": 200.0,
+    
+    "NX": 1200,
+    "NY": 1200,
+    "NZ": 300,
+
+	"Depth(km)"  : 60,
+
+	"centerX" : 600,
+	"centerY" : 600,
+
+	"IT_SKIP" : 1000,
+
+	"sliceX" : -1, 
+	"sliceY" : -1,
+	"sliceZ" : 298,
+	"sliceFreeSurf" : 1,
+
+    "PX": 4,
+    "PY": 4,
+    "PZ": 8,
+
+	"sourceX" : 305, 
+	"sourceY" : 305,
+	"sourceZ" : 165,
+
+	"centerLatitude" : 29.590000,
+	"centerLongitude": 102.079500,
+
+
+	"nPML" : 12,
+
+
+	"gauss_hill"	: 0,
+	"useTerrain"    : 1, 
+	"useMedium"     : 1,
+	"useMultiSource": 1,
+
+	"useSingleSource(ricker)" : 0,
+	"rickerfc"		: 0.2,
+
+	"strike"		: 164,
+	"dip"			: 46,
+	"rake"			: 122,
+
+	"Mw"			: 6.2,
+
+	"ShenModel"		: 1,
+	"Crust_1Medel"	: 0,
+	"LayeredModel"  : 0,
+
+    	"out"			: "./output_luding_128",
+
+	"gpu_nodes"		: {
+						"teslagpus" : [ 0, 1, 2, 3, 4, 5, 6, 7 ]
+					  },
+
+	
+	"TerrainTif"	: "./terrainTif",
+	"TerrainDir"	: "./TerrainDir",
+	"srtm90"		: 1,
+	
+	"lonStart"		: 95,
+	"latStart"		: 25,
+	"blockX"		: 3,
+	"blockY"		: 2,
+
+
+
+	"MLatStart"		: 27,
+	"MLatEnd"		: 35,
+	"MLonStart"		: 95,
+	"MLonEnd"		: 105,
+	"MLonStep"		: 0.5,
+	"MLatStep"		: 0.5,
+
+	"MVeticalStep"	: 500,
+
+	"MediumDir"		: "./MediumDir",
+	"LayeredFileName" : "./MediumDir/LayeredModel",
+
+	"CrustDir"		: "./crust1.0",
+	"CrustLonStep"  : 1.0,
+	"CrustLatStep"  : 1.0,
+
+	"sourceDir"	 : "./source",
+	"sourceFile" : "wangweimin_source.bin", 
+
+	"FAST_AXIS"		: "X"
+
+}
+
+

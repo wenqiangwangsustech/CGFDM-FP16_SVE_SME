@@ -1,0 +1,94 @@
+{
+    "TMAX": 70.011,
+    
+	"DT": 1.0e-2,
+    "DH": 200.0,
+    
+	"NX": 2023,
+    "NY": 1957,
+    "NZ": 200,
+
+	"Depth(km)"  : 60,
+
+	"centerX" : 1000,
+	"centerY" : 1000,
+
+	"IT_SKIP" : 500,
+
+	"sliceX" : -1, 
+	"sliceY" : -1,
+	"sliceZ" : 149,
+	"sliceFreeSurf" : 1,
+
+    "PX": 2,
+    "PY": 3,
+    "PZ": 1,
+
+	"sourceX" : 805, 
+	"sourceY" : 805,
+	"sourceZ" : 175,
+
+	"centerLatitude" : 35.0,
+	"centerLongitude": 100,
+
+
+	"nPML" : 12,
+
+
+	"gauss_hill"	: 0,
+	"useTerrain"    : 1, 
+	"useMedium"     : 1,
+	"useMultiSource": 1,
+	"LayeredModel"  : 0,
+
+
+	"useSingleSource(ricker)" : 0,
+	"rickerfc"		: 1.5,
+
+	"ShenModel"		: 1,
+	"Crust_1Medel"	: 0,
+
+    "out"			: "MenyuanTest",
+
+	"gpu_nodes"		: {
+						"teslagpus" : [ 2, 3, 4, 5, 6, 7]
+					  },
+
+	
+	"TerrainTif"	: "./terrainTif",
+	"TerrainDir"	: "./TerrainDir",
+	"srtm90"		: 1,
+	
+	"lonStart"		: 95,
+	"latStart"		: 30,
+	"blockX"		: 3,
+	"blockY"		: 2,
+
+
+
+	"MLatStart"		: 30,
+	"MLatEnd"		: 45,
+	"MLonStart"		: 95,
+	"MLonEnd"		: 105,
+	"MLonStep"		: 0.5,
+	"MLatStep"		: 0.5,
+
+	"MVeticalStep"	: 500,
+
+	"MediumDir"		: "./MediumDir",
+	"LayeredFileName" : "Layer.txt",
+
+	"CrustDir"		: "./crust1.0",
+	"CrustLonStep"  : 1.0,
+	"CrustLatStep"  : 1.0,
+
+	"sourceDir"	 : "./source",
+	"sourceFile" : "USGSsource.bin", 
+
+
+
+	"FAST_AXIS"		: "Z"
+
+}
+
+
