@@ -17,7 +17,7 @@ XFAST := ON
 ZFAST := #ON
 
 FREE_SURFACE := ON
-PML := ON
+PML := #ON
 SOLVE_DISPLACEMENT := ON
 Terrain_Smooth := #ON 
 DealWithFirstLayer := ON

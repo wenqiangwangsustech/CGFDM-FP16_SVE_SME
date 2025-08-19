@@ -16,7 +16,7 @@ XFAST := ON
 ZFAST := #ON
 
 FREE_SURFACE := ON
-PML := ON
+PML := #ON
 SOLVE_DISPLACEMENT := ON
 Terrain_Smooth := #ON 
 DealWithFirstLayer := ON
@@ -27,7 +27,7 @@ StructureTerrain := ON
 
 SET_BASIN := #ON
 
-SRCDIR := ./SRC-fp16-sve
+SRCDIR := ./src-new-FP16-SVE
 
 
 CCHOME   := /opt/HPCKit/24.6.30/compiler/bisheng
@@ -68,8 +68,21 @@ BINDIR := ./bin
 
 CFLAGS := -c -O2 -Wno-all
 
+ifdef SVE
 CFLAGS += -mcpu=native -march=armv8-a+sve
+ifdef FLOAT16
+#wave_deriv_file := fp16_sme_wave_deriv.o
 wave_deriv_file := fp16_wave_deriv_sve.o
+#wave_rk_file := fp16_wave_rk_sve.o
+else
+wave_deriv_file := wave_deriv_sve.o
+#wave_rk_file := wave_rk_sve.o
+endif
+else
+wave_deriv_file := wave_deriv.o
+endif
+
+
 wave_rk_file := wave_rk.o
 
 #LFLAGS := -fopenmp -O2

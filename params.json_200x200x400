@@ -4,14 +4,14 @@
     "DT": 5.0e-3,
     "DH": 100.0,
     
-    "NX": 401,
-    "NY": 401,
+    "NX": 201,
+    "NY": 201,
     "NZ": 401,
 
 	"Depth(km)"  : 20,
 
-	"centerX" : 200,
-	"centerY" : 200,
+	"centerX" : 100,
+	"centerY" : 100,
 
 	"IT_SKIP" : 10000000,
 
@@ -24,8 +24,8 @@
     "PY": 8,
     "PZ": 8,
 
-	"sourceX" : 200, 
-	"sourceY" : 200,
+	"sourceX" : 100, 
+	"sourceY" : 100,
 	"sourceZ" : 395,
 
 	"centerLatitude" : 29.590000,
