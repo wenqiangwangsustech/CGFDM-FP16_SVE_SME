@@ -1,5 +1,3 @@
-好的 ✅ 我帮你整理成一个结构清晰、完整的 `README.md`，把你写的内容统一格式化，避免重复标题，并修正拼写（libraries）。
-
 ````markdown
 # Project Dependencies
 
