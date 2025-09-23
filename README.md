@@ -5,6 +5,7 @@ This project requires several dependencies to be installed before building and r
 
 ---
 
+
 ## Step 1. Install libtiff, SQLite3, and PROJ (from source)
 
 ```bash
