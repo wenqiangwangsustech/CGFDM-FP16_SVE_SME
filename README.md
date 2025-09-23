@@ -96,7 +96,7 @@ To run an example, go into its directory and execute:
 cd HalfSpaceModel
 bash runAll
 ```
-
+Each example generates output data that can be visualized using the provided Python scripts.
 ```
 ```
 
