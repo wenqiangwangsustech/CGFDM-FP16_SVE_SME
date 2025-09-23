@@ -74,12 +74,11 @@ CCHOME   := /your/compiler/direcory
 MPIHOME  := /your/mpi/direcory
 PROJHOME := /your/install/proj-8.1.0
 ```
-
 All the run* files:
 ```
-CCHOME   := /your/compiler/direcory
-MPIHOME  := /your/mpi/direcory
-PROJHOME := /your/install/proj-8.1.0
+export LD_LIBRARY_PATH=/your/install/proj-8.1.0/lib:${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=/your/install/sqlite3/lib:${LD_LIBRARY_PATH}
+export PROJ_LIB=/your/install/proj-8.1.0/share/proj
 ```
 
 
