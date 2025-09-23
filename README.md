@@ -81,6 +81,8 @@ export LD_LIBRARY_PATH=/your/install/sqlite3/lib:${LD_LIBRARY_PATH}
 export PROJ_LIB=/your/install/proj-8.1.0/share/proj
 ```
 
+## Step 5. Run Examples
 
+We provide four example cases to test and demonstrate the project:
 
 
