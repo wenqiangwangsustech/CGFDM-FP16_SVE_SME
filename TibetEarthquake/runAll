@@ -7,6 +7,12 @@
 
 cp * ../
 
+cd ../
+
+mkdir source
+mkdir TerrainDir
+mkdir terrainTif
+
 python modifyParam.py
 
 python readUSGS.py
