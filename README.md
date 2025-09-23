@@ -2,7 +2,7 @@
 
 This project requires several C/C++ libraries to be installed manually before building. Please follow the steps below.
 
-## Step 1. Install libtiff
+## Step 1. Install libtiff SQLite3 PROJ
 
 ```bash
 wget http://download.osgeo.org/libtiff/tiff-4.0.7.tar.gz
