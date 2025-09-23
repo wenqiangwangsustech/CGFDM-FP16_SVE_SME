@@ -25,3 +25,11 @@ export TIFF_CFLAGS="-I/your/install/path/tiff/include"
 export TIFF_LIBS="-L/your/install/path/tiff/lib -ltiff"
 export SQLITE3_CFLAGS="-I/your/install/path/sqlite3/include"
 export SQLITE3_LIBS="-L/your/install/path/sqlite3/lib -lsqlite3"
+
+
+## Step 2. Install Anaconda
+conda create -n pyenv python=3.10 -y
+conda activate pyenv
+
+
+## Step 3. Install Python libararies
