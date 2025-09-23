@@ -1,12 +1,6 @@
-# Project Dependencies
-
-This project requires several dependencies to be installed before building and running. Please follow the steps below.
-
----
-
-
 ## Step 1. Install libtiff, SQLite3, and PROJ (from source)
 
+This project requires several dependencies to be installed before building and running. Please follow the steps below.
 ```bash
 # Install libtiff
 wget http://download.osgeo.org/libtiff/tiff-4.0.7.tar.gz
