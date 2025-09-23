@@ -74,7 +74,7 @@ conda install pyproj -y
 
 ✅ After completing these steps, all required C/C++ and Python dependencies are installed, and the environment `pyenv` is ready for building and running this project.
 
-```
 
-要不要我再给你做一个 **简化版 README**（直接用 `conda install libtiff sqlite proj pyproj`，跳过源码安装）？这样别人安装起来更快。
-```
+
+
+
