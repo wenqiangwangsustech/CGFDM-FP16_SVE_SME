@@ -1,0 +1,35 @@
+#!/usr/bin/bash
+################################
+## Author: Wenqiang Wang
+## Mail: 11849528@mail.sustech.edu.cn
+## Created Time: Sat 13 Sep 2025 05:51:42 PM CST
+################################
+
+cp * ../
+
+python modifyParam.py
+
+
+make clean
+make -j -f Makefile-fp32-cgfdm
+cp params.json_FP32-CGFDM params.json
+bash FP32-CGFDM-run
+
+
+make clean
+make -j -f Makefile-fp16-cgfdm
+cp params.json_FP16-CGFDM params.json
+bash FP16-CGFDM-run	
+
+
+make clean
+make -j -f Makefile-fp32-sve
+cp params.json_FP32-SVE params.json
+bash FP32-SVE-run
+
+
+make clean
+make -j -f Makefile-fp16-sve
+cp params.json_FP16-SVE params.json
+bash FP16-SVE-run
+
