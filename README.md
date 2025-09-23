@@ -68,13 +68,20 @@ After completing these steps, all required C/C++ and Python dependencies are ins
 
 
 ## Step 4. Setup Build and Run Environment:
-
-```bash
-export TIFF_CFLAGS="-I/your/install/path/tiff/include"
-export TIFF_LIBS="-L/your/install/path/tiff/lib -ltiff"
-export SQLITE3_CFLAGS="-I/your/install/path/sqlite3/include"
-export SQLITE3_LIBS="-L/your/install/path/sqlite3/lib -lsqlite3"
+All the Makefile* files:
 ```
+CCHOME   := /your/compiler/direcory
+MPIHOME  := /your/mpi/direcory
+PROJHOME := /your/install/proj-8.1.0
+```
+
+All the run* files:
+```
+CCHOME   := /your/compiler/direcory
+MPIHOME  := /your/mpi/direcory
+PROJHOME := /your/install/proj-8.1.0
+```
+
 
 
 
