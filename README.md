@@ -1,4 +1,4 @@
-## Step 1. Install libtiff, SQLite3, and PROJ (from source)
+## Step 1. Install libtiff, sqite3, and proj (from source)
 
 This project requires several dependencies to be installed before building and running. Please follow the steps below.
 ```bash
