@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#MPIHOME=/opt/HPCKit/24.6.30/hmpi/bisheng/hmpi
+module use /opt/HPCKit/24.6.30/modulefiles
+
+module load bisheng/hmpi/hmpi
+export LD_LIBRARY_PATH=/home/Shenchao/wangwq/software/proj-8.1.0/lib:${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=/home/Shenchao/wangwq/software/sqlite3/lib:${LD_LIBRARY_PATH}
+#export LD_LIBRARY_PATH=${MPIHOME}/lib:${LD_LIBRARY_PATH}
+export PROJ_LIB=/home/Shenchao/wangwq/software/proj-8.1.0/share/proj
+
+
+PX=`cat params.json | grep "\"PX\"" | tr -cd "[0-9]"`
+PY=`cat params.json | grep "\"PY\"" | tr -cd "[0-9]"`
+PZ=`cat params.json | grep "\"PZ\"" | tr -cd "[0-9]"`
+
+ 
+
+RUN=mpirun
+#RUN=${MPIHOME}/bin/mpirun
+
+${RUN} -np $(($PX*$PY*$PZ)) numactl ./bin/fp16-sve | tee fp16-sve-log
