@@ -81,8 +81,22 @@ export LD_LIBRARY_PATH=/your/install/sqlite3/lib:${LD_LIBRARY_PATH}
 export PROJ_LIB=/your/install/proj-8.1.0/share/proj
 ```
 
-## Step 5. Run Examples
+## Step 5. Run provided examples
 
-We provide four example cases to test and demonstrate the project:
+There are four examples:
 
+* `HalfSpaceModel`
+* `GassianShapedModel`
+* `PerformanceTest`
+* `TibetEarthquake`
+
+To run an example, go into its directory and execute:
+
+```bash
+cd HalfSpaceModel
+bash runAll
+```
+
+```
+```
 
