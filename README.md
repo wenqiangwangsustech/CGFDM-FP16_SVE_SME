@@ -30,14 +30,6 @@ tar -xvf proj-8.1.0.tar.gz
 cd proj-8.1.0
 ````
 
-Set environment variables (adjust paths accordingly):
-
-```bash
-export TIFF_CFLAGS="-I/your/install/path/tiff/include"
-export TIFF_LIBS="-L/your/install/path/tiff/lib -ltiff"
-export SQLITE3_CFLAGS="-I/your/install/path/sqlite3/include"
-export SQLITE3_LIBS="-L/your/install/path/sqlite3/lib -lsqlite3"
-```
 
 Then configure, build, and install PROJ:
 
@@ -73,3 +65,16 @@ conda install pyproj -y
 ---
 
 After completing these steps, all required C/C++ and Python dependencies are installed, and the environment `pyenv` is ready for building and running this project.
+
+
+## Step 4. Setup Build and Run Environment:
+
+```bash
+export TIFF_CFLAGS="-I/your/install/path/tiff/include"
+export TIFF_LIBS="-L/your/install/path/tiff/lib -ltiff"
+export SQLITE3_CFLAGS="-I/your/install/path/sqlite3/include"
+export SQLITE3_LIBS="-L/your/install/path/sqlite3/lib -lsqlite3"
+```
+
+
+
