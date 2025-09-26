@@ -92,5 +92,4 @@ bash runAll
 ```
 Each example generates output data that can be visualized using the provided Python scripts.
 ```
-```
 
