@@ -54,7 +54,7 @@ Inside the `pyenv` environment, install the required Python libraries:
 conda install pyproj -y
 ```
 
-(Additional dependencies can be installed using `pip install -r requirements.txt` if provided.)
+(Additional dependencies can be installed using `pip install xxxx`.)
 
 ---
 
@@ -62,13 +62,13 @@ After completing these steps, all required C/C++ and Python dependencies are ins
 
 
 ## Step 4. Setup Build and Run Environment:
-All the Makefile* files:
+In all the Makefile* files:
 ```
 CCHOME   := /your/compiler/direcory
 MPIHOME  := /your/mpi/direcory
 PROJHOME := /your/install/proj-8.1.0
 ```
-All the run* files:
+In all the run* files:
 ```
 export LD_LIBRARY_PATH=/your/install/proj-8.1.0/lib:${LD_LIBRARY_PATH}
 export LD_LIBRARY_PATH=/your/install/sqlite3/lib:${LD_LIBRARY_PATH}
